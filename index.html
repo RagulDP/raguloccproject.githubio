@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  <title>Testimonials Grid</title>
+  <style>
+    /* Styling for the testimonials section */
+    .testimonials-section {
+      display: grid;
+      gap: 20px;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Styling for testimonial cards */
+    .testimonial-card {
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      color: #333;
+    }
+
+    .purple-bg { background-color: #7e5bef; color: #fff; }
+    .gray-bg { background-color: #d3d3d3; color: #333; }
+    .dark-bg { background-color: #333; color: #fff; }
+    .light-gray-bg { background-color: #f1f1f1; color: #333; }
+    .white-bg { background-color: #fff; color: #333; }
+
+    .large-card { grid-column: span 1; } /* Cards in the first row will take one column */
+
+    /* Styling for quotes */
+    .quote {
+      font-size: 1.2em;
+      font-style: italic;
+    }
+
+    /* Styling for user info */
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .user-info img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section class="testimonials-section">
+    <!-- First row: Daniel Clifford, Jonathan Walters, Kira Whitley -->
+    <div class="testimonial-card purple-bg">
+      <p class="quote">
+        <i class="ri-double-quotes-l"></i> I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny's worth.
+      </p>
+      <p class="description">"I was an EMT for many years before I joined the bootcamp. I've been looking to make a transition and heard some amazing stories. The next 12 weeks were intense but rewarding. I’m now a Software Engineer at a VR startup."</p>
+      <div class="user-info">
+        <img src="image-daniel.jpg" alt="Daniel Clifford">
+        <div>
+          <h5>Daniel Clifford</h5>
+          <h6>Verified Graduate</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card dark-bg">
+      <p class="quote">
+        <i class="ri-double-quotes-l"></i> The team was very supportive and kept me motivated.
+      </p>
+      <p class="description">"I started as a total newbie with virtually no coding skills. I now work as a mobile engineer for a big company. This was one of the best investments I've made in myself."</p>
+      <div class="user-info">
+        <img src="image-jonathan.jpg" alt="Jonathan Walters">
+        <div>
+          <h5>Jonathan Walters</h5>
+          <h6>Verified Graduate</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card white-bg">
+      <p class="quote">
+        <i class="ri-double-quotes-l"></i> Such a life-changing experience. Highly recommended!
+      </p>
+      <p class="description">Before joining the bootcamp, I’d never written a line of code. Thanks to the hands-on curriculum and amazing team projects, I was able to land a job as a full-stack developer with multiple offers. Highly recommend!</p>
+      <div class="user-info">
+        <img src="image-kira.jpg" alt="Kira Whitley">
+        <div>
+          <h5>Kira Whitley</h5>
+          <h6>Verified Graduate</h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row: Jeanette Harmon and Patrick Abrams -->
+    <div class="testimonial-card gray-bg">
+      <p class="quote">
+        <i class="ri-double-quotes-l"></i> An overall wonderful and rewarding experience.
+      </p>
+      <p class="description">Thank you for the wonderful experience! I now have a job I really enjoy and make a good living while doing something I love.</p>
+      <div class="user-info">
+        <img src="image-jeanette.jpg" alt="Jeanette Harmon">
+        <div>
+          <h5>Jeanette Harmon</h5>
+          <h6>Verified Graduate</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card light-gray-bg">
+      <p class="quote">
+        <i class="ri-double-quotes-l"></i> Awesome teaching support from TAs who did the bootcamp themselves.
+      </p>
+      <p class="description">The staff were genuinely concerned about my progress. The program gave me the confidence to present myself as a capable developer and surrounded me with an incredible community of smart and amazing people.</p>
+      <div class="user-info">
+        <img src="image-patrick.jpg" alt="Patrick Abrams">
+        <div>
+          <h5>Patrick Abrams</h5>
+          <h6>Verified Graduate</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
